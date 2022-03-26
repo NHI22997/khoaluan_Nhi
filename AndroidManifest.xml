@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ungdunghoctap">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/main"
+        android:roundIcon="@drawable/main"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Ungdunghoctap">
+        <activity
+            android:name=".MainActivity_Element_Student"
+            android:exported="false" />
+        <activity
+            android:name=".tkbGiangDay"
+            android:exported="false" />
+        <activity
+            android:name=".qlDiem"
+            android:exported="false" />
+        <activity
+            android:name=".dsSinhVien"
+            android:exported="true"></activity>
+        <activity
+            android:name=".BangDiem"
+            android:exported="true" />
+        <activity
+            android:name=".hpCanCaiThien"
+            android:exported="true" />
+        <activity
+            android:name=".tkDiemHe4"
+            android:exported="true" />
+        <activity
+            android:name=".tkDiemTichLuy"
+            android:exported="true" />
+        <activity
+            android:name=".LecturersActivity"
+            android:exported="true" />
+        <activity
+            android:name=".HelloScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>
