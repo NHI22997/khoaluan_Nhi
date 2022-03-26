@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtStt"
+            android:layout_width="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="STT" />
+
+        <TextView
+            android:id="@+id/txtMamh"
+            android:layout_width="60dp"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="Mamh" />
+
+        <TextView
+            android:id="@+id/txtTenmh"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="Tenmh"/>
+
+        <TextView
+            android:id="@+id/txtDiemhe10"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="Diemhe10" />
+
+        <TextView
+            android:id="@+id/txtDiemhe4"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="Diemhe4" />
+
+        <TextView
+            android:id="@+id/txtDiemquydoi"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="#F44336"
+            android:textStyle="bold"
+            android:text="Quydoi" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    tools:ignore="NamespaceTypo">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/txtdangnhap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="ĐĂNG NHẬP"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textStyle="bold">
+    </TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterMaxLength="9">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/mand"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/custom_button"
+            app:counterEnabled="true"
+            app:errorEnabled="true"
+            android:maxLength="9"
+            android:drawableStart="@drawable/user"
+            android:hint="  Nhập Tài khoản"
+            android:textColorHint="@android:color/darker_gray"
+            tools:ignore="TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        android:layout_marginTop="15dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordlogin"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/custom_button"
+            android:drawableStart="@drawable/password"
+            app:errorEnabled="true"
+            app:passwordToggleEnabled="true"
+            app:counterEnabled="true"
+            android:hint="  Nhập Mật khẩu"
+            android:inputType="textPassword"
+            android:textColorHint="@android:color/darker_gray"
+            tools:ignore="TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1D95F4"
+            android:text="Đăng nhập"
+            android:textSize="25sp"/>
+
+        <ImageButton
+            android:id="@+id/imggoogle"
+            android:layout_width="185dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:background="#FDFCFC"
+            android:src="@drawable/signingg"
+            android:textAlignment="center"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck">
+        </ImageButton>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="information"
+        android:id="@+id/infouser"
+        android:icon="@drawable/user1"
+        app:showAsAction="always">
+
+        <menu>
+            <item android:title="Thông tin cá nhân"
+                  android:id="@+id/info"
+                  android:icon="@drawable/infouser"
+                />
+            <item android:title="Đăng xuất"
+                  android:id="@+id/logout"
+                  android:icon="@drawable/logoutuser"/>
+            <item android:title="Thoát"
+                  android:id="@+id/exit"
+                  android:icon="@drawable/exituser"/>
+        </menu>
+
+    </item>
+</menu>

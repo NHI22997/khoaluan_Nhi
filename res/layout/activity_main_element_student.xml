@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity_Element_Student">
+
+    <LinearLayout
+        android:id="@+id/linearLayouttoolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#2196F3"
+            app:menu="@menu/info_user"
+            app:title="">
+        </androidx.appcompat.widget.Toolbar>
+    </LinearLayout>
+
+    <!--<TextView
+        android:id="@+id/txtHoten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="16dp"
+        android:gravity="right"
+        android:layout_marginRight="10dp">
+    </TextView>-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="385dp"
+            android:layout_height="55dp"
+            android:background="@drawable/custom_form"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="13dp"
+                android:drawableStart="@drawable/achievement"
+                android:fontFamily="sans-serif-medium"
+                android:text=" ĐIỂM TÍCH LŨY HỌC KỲ GẦN NHẤT:"
+                android:textAlignment="center"
+                android:textColor="#1833C8"
+                android:textSize="17sp"
+                android:textStyle="bold">
+            </TextView>
+
+            <TextView
+                android:id="@+id/txttichluyhkgannhat"
+                android:layout_width="50dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textAlignment="center"
+                android:textColor="#1833C8"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="InvalidId,SpeakableTextPresentCheck,TouchTargetSizeCheck">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="385dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/custom_form"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:drawableStart="@drawable/score1"
+                android:fontFamily="sans-serif-medium"
+                android:text="  ĐIỂM TRUNG BÌNH TÍCH LŨY:"
+                android:textAlignment="center"
+                android:textColor="#1833C8"
+                android:textSize="17sp"
+                android:textStyle="bold">
+            </TextView>
+
+            <TextView
+                android:id="@+id/txttbtichluy"
+                android:layout_width="80dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textAlignment="center"
+                android:textColor="#1833C8"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="InvalidId,SpeakableTextPresentCheck,TouchTargetSizeCheck">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="385dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/custom_form"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="13dp"
+                android:drawableStart="@drawable/medal"
+                android:fontFamily="sans-serif-medium"
+                android:text="  TỔNG SỐ TÍN CHỈ TÍCH LŨY:"
+                android:textAlignment="center"
+                android:textColor="#1833C8"
+                android:textSize="17sp"
+                android:textStyle="bold">
+            </TextView>
+
+            <TextView
+                android:id="@+id/txttongtinchi"
+                android:layout_width="92dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textAlignment="center"
+                android:textColor="#1833C8"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck">
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TableRow>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imgtkdiemtichluy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:contentDescription="TODO"
+                android:src="@drawable/plan"
+                tools:ignore="SpeakableTextPresentCheck">
+            </ImageButton>
+
+            <TextView
+                android:id="@+id/txttkdiemtichluy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="THỐNG KÊ ĐIỂM TÍCH LŨY"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#393838">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/imgtkdiemhe4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/piechart"
+                tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck"
+                android:contentDescription="TODO">
+            </ImageButton>
+
+            <TextView
+                android:id="@+id/txttkdiemhe4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="THỐNG KÊ ĐIỂM HỆ 4"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#393838">
+            </TextView>
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow>
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/imghpcancaithien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/notification"
+                tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck"
+                android:contentDescription="TODO">
+            </ImageButton>
+
+            <TextView
+                android:id="@+id/txthpcancaithien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HỌC PHẦN CẦN CẢI THIỆN"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#393838">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/imgbangdiem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/todolist"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:contentDescription="TODO">
+            </ImageButton>
+
+            <TextView
+                android:id="@+id/txtbangdiem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ĐIỂM THƯỜNG XUYÊN"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#393838">
+            </TextView>
+        </LinearLayout>
+    </TableRow>
+
+</TableLayout>

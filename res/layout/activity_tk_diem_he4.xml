@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tkDiemHe4">
+
+    <LinearLayout
+        android:id="@+id/linearLayouttoolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#2196F3"
+            app:menu="@menu/info_user"
+            app:title="Thống kê điểm hệ 4">
+        </androidx.appcompat.widget.Toolbar>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:layout_marginTop="7dp"
+        android:orientation="vertical">
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/piechart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="InvalidId">
+        </com.github.mikephil.charting.charts.PieChart>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/a"
+            android:fontFamily="sans-serif-medium"
+            android:text=" "
+            android:textAlignment="center"
+            android:textColor="#1833C8"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            tools:ignore="SpeakableTextPresentCheck">
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtdiema"
+            android:layout_width="50dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="11dp"
+            android:fontFamily="sans-serif-medium"
+            android:textAlignment="center"
+            android:textColor="#1833C8"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="InvalidId,SpeakableTextPresentCheck,TouchTargetSizeCheck">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="môn"
+            android:textAlignment="center"
+            android:textColor="#1833C8"
+            android:textSize="17sp"
+            android:textStyle="bold">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/b"
+            android:fontFamily="sans-serif-medium"
+            android:text=" "
+            android:textAlignment="center"
+            android:textColor="#1833C8"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            tools:ignore="SpeakableTextPresentCheck">
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtdiemb"
+            android:layout_width="50dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="11dp"
+            android:fontFamily="sans-serif-medium"
+            android:textAlignment="center"
+            android:textColor="#1833C8"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="InvalidId,SpeakableTextPresentCheck,TouchTargetSizeCheck">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="môn"
+            android:textAlignment="center"
+            android:textColor="#1833C8"
+            android:textSize="17sp"
+            android:textStyle="bold">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/c"
+            android:fontFamily="sans-serif-medium"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#1833C8"
+            android:textSize="17sp"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtdiemc"
+            android:layout_width="50dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="11dp"
+            android:fontFamily="sans-serif-medium"
+            android:textAlignment="center"
+            android:textColor="#1833C8"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="InvalidId,SpeakableTextPresentCheck,TouchTargetSizeCheck">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="môn"
+            android:textAlignment="center"
+            android:textColor="#1833C8"
+            android:textSize="17sp"
+            android:textStyle="bold">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/d"
+            android:fontFamily="sans-serif-medium"
+            android:text=" "
+            android:textAlignment="center"
+            android:textColor="#1833C8"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            tools:ignore="SpeakableTextPresentCheck">
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtdiemd"
+            android:layout_width="50dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="11dp"
+            android:fontFamily="sans-serif-medium"
+            android:textAlignment="center"
+            android:textColor="#1833C8"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="InvalidId,SpeakableTextPresentCheck,TouchTargetSizeCheck">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="môn"
+            android:textAlignment="center"
+            android:textColor="#1833C8"
+            android:textSize="17sp"
+            android:textStyle="bold">
+        </TextView>
+
+    </LinearLayout>
+
+</TableLayout>
